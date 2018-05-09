@@ -1,6 +1,6 @@
 package com.training.lambda.apps;
 
-interface Predicate {
+interface MyPredicate {
   boolean test(int n);
 }
 
@@ -16,7 +16,7 @@ public class StaticMethodReference {
 
 	public static void main(String[] args) {
 	
-		Predicate obj = EvenOddCheck::isEven;
+		MyPredicate obj = EvenOddCheck::isEven;
 		 
 		System.out.println(obj.test(25));
 	}

@@ -11,7 +11,7 @@ public class InstanceMethodReference {
 
 		public static void main(String[] args) {
 		
-			Predicate obj = EvenOddCheck::isEven;
+			MyPredicate obj = EvenOddCheck::isEven;
 			 
 			System.out.println(obj.test(25));
 		}
