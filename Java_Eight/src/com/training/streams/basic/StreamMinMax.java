@@ -34,11 +34,12 @@ public class StreamMinMax {
 			  leastPriced= minresult.get().getRatePerUnit();
 		 }
 		 
+			System.out.println("Least Priced  :="+itemType + leastPriced);
+
 		 Optional<Product> maxresult= catalog.stream().
 				                            filter((Product prod ) -> prod.getProductName().equalsIgnoreCase(itemType)).
 				                                    max(priceComparator);
 		 
-		System.out.println("Least Priced  :="+itemType + leastPriced);
 		
 		 double highPriced=0;
 		 if(maxresult.isPresent())
@@ -48,7 +49,13 @@ public class StreamMinMax {
 		 
 		System.out.println("Highest Priced :="+itemType + highPriced);
 		 
-		
+
+		 long  countresult= catalog.stream().
+                 filter((Product prod ) -> prod.getProductName().equalsIgnoreCase(itemType)).count();
+		 
+		 
+                         System.out.println(countresult);
+
                      
 	}
 

@@ -2,9 +2,11 @@ package com.training.utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.IntSupplier;
 import java.util.stream.Collectors;
 
 import com.training.domains.Customer;
+
 
 public class HandleCustomers {
 
@@ -16,8 +18,9 @@ public class HandleCustomers {
 		          customerList.add(new Customer(102,"Anand", 8454562L));
 		          customerList.add(new Customer(210,"Deepak", 967454562L));
 		          customerList.add(new Customer(212,"Chand", 73454562L));
-		           
+		          customerList.add(new Customer(213,null, 73454562L));
 		          
+		          IntSupplier sup;
 		    return customerList;
 	}
 	

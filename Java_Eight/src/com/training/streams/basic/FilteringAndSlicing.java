@@ -16,6 +16,8 @@ public class FilteringAndSlicing {
 		List<Customer> customerList = HandleCustomers.getCustomers();
 
 		
+
+		
 		Map<Long, String> map = customerList.stream()
 				.collect(Collectors.toMap(Customer::getPhoneNumber, Customer::getCustomerName));
 		

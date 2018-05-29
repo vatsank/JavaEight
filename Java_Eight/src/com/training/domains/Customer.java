@@ -1,6 +1,6 @@
 package com.training.domains;
 
-public class Customer {
+public class Customer implements Comparable<Customer> {
 
 	private long customerId;
 	private String customerName;
@@ -77,6 +77,12 @@ public class Customer {
 		if (phoneNumber != other.phoneNumber)
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Customer o) {
+		// TODO Auto-generated method stub
+		return this.customerName.compareTo(o.customerName);
 	}
 	
 }
