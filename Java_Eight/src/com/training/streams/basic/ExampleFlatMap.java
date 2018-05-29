@@ -1,5 +1,6 @@
 package com.training.streams.basic;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -29,11 +30,11 @@ public class ExampleFlatMap {
 		orderBook.add(new Order(702,new Customer(300,"Ram",45500L),prdList));
 
         List<Product> itemList =
-        		orderBook.stream()
-                        .map(x -> x.getItems())     
-                        .flatMap(x -> x.stream())   
-                        .collect(Collectors.toList());
+        		orderBook.stream().flatMap(x -> x.getItems().stream())     
+                         .collect(Collectors.toCollection(ArrayList::new));
 
+        
+        
         itemList.forEach(System.out::println);
         
         
