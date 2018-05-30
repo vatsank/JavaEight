@@ -2,7 +2,10 @@ package com.training.nio.stream;
 import java.io.IOException;
 import java.nio.file.*;
 import java.util.Arrays;
+import java.util.function.BiPredicate;
 import java.util.stream.*;
+
+import javax.naming.directory.BasicAttributes;
 
 
 public class ReadingFiles {

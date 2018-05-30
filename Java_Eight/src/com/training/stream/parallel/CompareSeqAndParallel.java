@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Stream;
 
 public class CompareSeqAndParallel {
 
@@ -15,6 +16,8 @@ public class CompareSeqAndParallel {
 		    UUID uuid = UUID.randomUUID();
 		    values.add(uuid.toString());
 		}
+		
+		
 		long t0 = System.nanoTime();
 
 		long count = values.stream().sorted().count();

@@ -36,7 +36,7 @@ public class UsingDateTime {
 		
 		System.out.println("Your Time Zone"+ ZoneId.getAvailableZoneIds());
 		
-		System.out.println(ZonedDateTime.now(ZoneId.of("America/Chicago")));
+		System.out.println("Current  Time in chicago "+ZonedDateTime.now(ZoneId.of("America/Chicago")));
 		
 	}
 
