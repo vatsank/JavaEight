@@ -24,12 +24,12 @@ class Sample {
   public static void main(String[] args) {
     Map<String, Integer> scores = new HashMap<>();
     
-    scores.put("Jack", 12);
-    scores.put("Jill", 15);
-    scores.put("Tom", 11);
-    scores.put("Darla", 15);
-    scores.put("Nick", 15);
-    scores.put("Nancy", 11);
+    scores.put("Ramesh", 12);
+    scores.put("Suresh", 15);
+    scores.put("Magesh", 11);
+    scores.put("Nagesh", 15);
+    scores.put("Naresh", 15);
+    scores.put("Janaki", 11);
     
     System.out.println(groupByScores(scores));
   }              
