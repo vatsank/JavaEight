@@ -9,9 +9,10 @@ public class FrkJoinApplication {
 		// to calculate 11th element of Fibonacci Series
 
 	 
-		 	
-		  Fibonacci fibonacci = new Fibonacci(25);
-	        ForkJoinPool pool = new ForkJoinPool(4);
+		 ForkJoinPool pool = new ForkJoinPool(5);
+		 
+		  Fibonacci fibonacci = new Fibonacci(15);
+	       
 	     
 	    
 	        System.out.println(pool.invoke(fibonacci));

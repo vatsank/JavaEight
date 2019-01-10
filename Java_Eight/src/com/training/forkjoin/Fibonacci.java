@@ -20,7 +20,9 @@ final long n;
     }
     
     static long do_fibonacci(long n) {
+    	
         if ( n<=1 ) return n;
+     
         return do_fibonacci(n-1) + do_fibonacci(n-2);
     }
 

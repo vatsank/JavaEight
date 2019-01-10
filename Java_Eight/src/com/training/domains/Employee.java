@@ -9,8 +9,30 @@ public class Employee {
 	private String name;
 	private LocalDate joinDate;
 	private LocalDateTime birthdate;
+	private double baseSalary;
+	private double bonus;
 	
 	
+	public double getBaseSalary() {
+		return baseSalary;
+	}
+
+
+	public void setBaseSalary(double baseSalary) {
+		this.baseSalary = baseSalary;
+	}
+
+
+	public double getBonus() {
+		return bonus;
+	}
+
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -23,6 +45,26 @@ public class Employee {
 		this.name = name;
 		this.joinDate = joinDate;
 		this.birthdate = birthdate;
+	}
+
+
+	public Employee(String name, double baseSalary, double bonus) {
+		super();
+		this.name = name;
+		this.baseSalary = baseSalary;
+		this.bonus = bonus;
+	}
+
+
+	public Employee(long employeeId, String name, LocalDate joinDate, LocalDateTime birthdate, double baseSalary,
+			double bonus) {
+		super();
+		this.employeeId = employeeId;
+		this.name = name;
+		this.joinDate = joinDate;
+		this.birthdate = birthdate;
+		this.baseSalary = baseSalary;
+		this.bonus = bonus;
 	}
 
 
@@ -54,8 +96,10 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", name=" + name + ", joinDate=" + joinDate + ", birthdate="
-				+ birthdate + "]";
+		return "Employee [name=" + name + ", baseSalary=" + baseSalary + ", bonus=" + bonus + "]";
 	}
+
+
+	
 	
 }

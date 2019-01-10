@@ -10,7 +10,7 @@ public class CompareSeqAndParallel {
 
 	public static void main(String[] args) {
 		
-		int max = 1000000;
+		int max = 100000;
 		List<String> values = new ArrayList<>(max);
 		for (int i = 0; i < max; i++) {
 		    UUID uuid = UUID.randomUUID();
