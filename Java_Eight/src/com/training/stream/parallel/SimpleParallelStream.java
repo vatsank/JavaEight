@@ -27,7 +27,7 @@ public class SimpleParallelStream {
 		
 		Stream.of("John", "Mike", "Ryan","Donald", "Matthew").parallel().forEach(System.out::println);
 		
-		Long sum = Stream.iterate(1L, (i)->{return i +1;}).limit(10).reduce(0L,Long::sum);
+		Long sum = Stream.iterate(1L, (i)->{return i +1;}).limit(10).reduce(1L,Long::sum);
 		
 		System.out.println(sum);
 		
